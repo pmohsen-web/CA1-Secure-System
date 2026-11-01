@@ -39,10 +39,7 @@ import sys
 # Check Flask is present BEFORE trying to import it. The order matters: if the
 # "from flask import ..." line ran first and Flask were missing, Python would
 # stop with a traceback and this helpful code would never execute.
-import _preflight
 
-if not _preflight.ensure(["flask"]):
-    sys.exit(1)
 
 from flask import (Flask, redirect, render_template_string, request,
                    session, url_for)
