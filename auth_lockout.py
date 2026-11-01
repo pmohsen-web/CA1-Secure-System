@@ -27,8 +27,8 @@ from datetime import datetime, timedelta, timezone
 
 import storage_sqlite as storage
 import passwords
-import validate
-import audit
+import validate_strict as validate
+import audit_file as audit
 
 BLOCK_NAME = "Auth: register + login with lockout"
 
